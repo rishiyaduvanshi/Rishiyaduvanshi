@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Colour Contractor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(120deg, #ff5722, #ff9800, #ffc107);
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 38px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 18px;
+    }
+
+    /* NAV */
+    nav {
+      background: #222;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* MAIN */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #ff5722;
+      border-left: 6px solid #ff9800;
+      padding-left: 12px;
+    }
+
+    section p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    /* CONTRACTOR PROFILE */
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .profile img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #ff9800;
+    }
+
+    .profile h3 {
+      font-size: 26px;
+      color: #333;
+    }
+
+    .profile span {
+      color: #ff5722;
+      font-weight: bold;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .service-box {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .service-box h4 {
+      color: #ff9800;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* CONTACT */
+    .contact {
+      background: linear-gradient(120deg, #ff5722, #ff9800, #ffc107);
+      color: white;
+      padding: 35px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+      border: none;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 18px;
+    }
+
+    footer span {
+      color: #00ffc8;
+    }
+
+    form{
+  max-width:500px;
+  margin:20px auto;
+  text-align:left;
+}
+
+form input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:6px;
+}
+
+form button{
+  width:100%;
+  padding:12px;
+  background-color: #00ffc8;
+  border:none;
+  color:white;
+  font-size:16px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+form button:hover{
+  background:#00ffd9;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>COLOUR CONTRACTOR</h1>
+  <p>Colour Lappi • Texture • Wall Design • Complete Painting Work</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section>
+    <h2>Contractor Profile</h2>
+    <div class="profile">
+      <!-- Replace contractor.jpg with your photo -->
+      <img src="Screenshot 2026-01-13 141008.png" alt="Contractor Photo">
+      <div>
+        <h3>Name: <span>Shailesh bhai yadav</span></h3>
+        <p>
+          Professional Colour Contractor with experience in Colour Lappi, Aster,
+          Meta Polish, Wall Design, Texture (Tracchar) work and all types of
+          interior & exterior painting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Services (Work Sequence)</h2>
+    <div class="services">
+
+      <div class="service-box">
+        <h4>1. Colour Contracting</h4>
+        <p>Complete painting contract for home, shop and building.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>2. Colour Lappi</h4>
+        <p>Traditional & modern colour lappi finishing work.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>3. Aster / Meta Polish</h4>
+        <p>Premium aster & meta polish for luxury walls.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>4. Wall Design</h4>
+        <p>Creative wall designs, patterns and colour combinations.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>5. Texture (Tracchar) Work</h4>
+        <p>Modern texture, tracer & tracchar wall finishing.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>6. Interior & Exterior Painting</h4>
+        <p>House, flat, office and commercial painting work.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+  <div class="gallery">
+
+  <div class="item">
+    <img src="wall design.jpg">
+    <p>1. Wall Design</p>
+  </div>
+
+  <div class="item">
+    <img src="tracture.webp">
+    <p>2. Texture Design</p>
+  </div>
+
+  <div class="item">
+    <img src="wallputty.jpg">
+    <p>3. wallputty  (lapi)</p> <br>
+  </div>
+
+  <div class="item">
+    <img src="po polic.jpg">
+    <p>4. Wood po polish</p>
+  </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Details</h2>
+    <p>📞 Mobile: 9879117353</p>
+    <p><h4>Address:</h4> 80 feet road desalbhagat <br> ki vav 17 no school ke samne. <br> 
+    </p>
+    <p>📍 Service Area: All Locations</p>
+    <p>🎨 Quality Work | Best Rate | Trusted Service</p>
+  </section>
+
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+<h2>Enquiry Form</h2>
+<form>
+<input type="text" placeholder="Enter Your Name" required>
+<input type="email" placeholder="Enter Your Email" required>
+<input type="tel" placeholder="Enter Your Mobile Number" required>
+<button type="submit">Submit</button>
+</form>
+</section>
+
+<footer>
+  <p>© 2026 <span>Colour Contractor</span> | Designed with Colour Theme</p>
+</footer>
+
+</body>
+</html>
